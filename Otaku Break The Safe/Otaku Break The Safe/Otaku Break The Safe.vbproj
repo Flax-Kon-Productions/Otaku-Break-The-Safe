@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameScreen.Designer.vb">
+      <DependentUpon>GameScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Welcome.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GameScreen.resx">
+      <DependentUpon>GameScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
     </EmbeddedResource>
